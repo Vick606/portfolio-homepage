@@ -1,34 +1,44 @@
 #contact {
-    background-color: var(--light-bg);
     padding: 4rem 0;
-    color: var(--text-color);
+    background-color: $background-color;
 
     h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 2rem;
         font-family: $heading-font;
         font-weight: 700;
-        text-align: center;
-        margin-bottom: 2rem;
-        color: var(--primary-color);
     }
 
-    form {
-        max-width: 500px;
+    .contact-container {
+        max-width: 800px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contact-form {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         input, textarea {
             width: 100%;
             padding: 0.75rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid var(--primary-color);
+            margin-bottom: 1rem;
+            border: 1px solid #e0e0e0;
             border-radius: 4px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             font-family: $primary-font;
-            transition: border-color $transition-speed ease;
 
             &:focus {
                 outline: none;
-                border-color: var(--secondary-color);
+                border-color: $secondary-color;
             }
         }
 
@@ -38,39 +48,50 @@
         }
 
         button {
-            background-color: var(--primary-color);
-            color: var(--light-bg);
+            background-color: $primary-color;
+            color: white;
             border: none;
             padding: 0.75rem 1.5rem;
             border-radius: 4px;
             cursor: pointer;
             font-family: $primary-font;
             font-weight: 600;
-            transition: background-color $transition-speed ease;
+            transition: background-color 0.3s ease;
 
             &:hover {
-                background-color: var(--secondary-color);
+                background-color: darken($primary-color, 10%);
             }
         }
     }
 
     .contact-info {
-        margin-top: 2rem;
-        text-align: center;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            color: $secondary-color;
+            margin-bottom: 1rem;
+            font-family: $heading-font;
+            font-weight: 700;
+        }
 
         .contact-item {
             display: flex;
             align-items: center;
-            justify-content: center;
             margin-bottom: 1rem;
 
             svg {
+                width: 24px;
+                height: 24px;
                 margin-right: 0.5rem;
-                fill: var(--primary-color);
+                fill: $primary-color;
             }
 
             span {
                 font-family: $primary-font;
+                color: $text-color;
             }
         }
     }
