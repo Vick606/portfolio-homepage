@@ -1,0 +1,21 @@
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f4f4f4;
+$accent-color: #e74c3c;
+
+// Fonts
+$primary-font: 'Roboto', sans-serif;
+$heading-font: 'Poppins', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+    'small': 576px,
+    'medium': 768px,
+    'large': 992px,
+    'xl': 1200px
+);
+
+// Transitions
+$transition-speed: 0.3s;

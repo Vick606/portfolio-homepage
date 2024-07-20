@@ -1,0 +1,69 @@
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(-5px, -5px);
+    }
+    60% {
+        transform: translate(5px, 5px);
+    }
+    80% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: $text-color; }
+}
+
+.glitch {
+    position: relative;
+    
+    &::before,
+    &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::before {
+        left: 2px;
+        text-shadow: -2px 0 $accent-color;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch 5s infinite linear alternate-reverse;
+    }
+
+    &::after {
+        left: -2px;
+        text-shadow: -2px 0 $secondary-color;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch 5s infinite linear alternate-reverse;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid $text-color;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typewriter 3.5s steps(40, end),
+        blink .75s step-end infinite;
+}

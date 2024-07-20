@@ -1,0 +1,22 @@
+#about {
+    text-align: center;
+    padding: 2rem 0;
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        color: $primary-color;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

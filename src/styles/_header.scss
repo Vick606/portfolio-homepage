@@ -1,0 +1,25 @@
+header {
+    background-color: $primary-color;
+    padding: 1rem 0;
+
+    nav {
+        ul {
+            @include flex-center;
+            list-style-type: none;
+            
+            li {
+                margin: 0 1rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
