@@ -4,6 +4,8 @@ $secondary-color: #2ecc71;
 $text-color: #333;
 $background-color: #f4f4f4;
 $accent-color: #e74c3c;
+$light-bg: #ffffff;
+$dark-bg: #2c3e50;
 
 // Fonts
 $primary-font: 'Roboto', sans-serif;
@@ -19,3 +21,6 @@ $breakpoints: (
 
 // Transitions
 $transition-speed: 0.3s;
+
+// Shadows
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
