@@ -1,0 +1,29 @@
+#skills {
+    background-color: $light-bg;
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .skill-item {
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
