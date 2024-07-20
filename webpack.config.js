@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
-        publicPath: 'portfolio-homepage',
+        publicPath: '/portfolio-homepage/',
     },
     module: {
         rules: [
