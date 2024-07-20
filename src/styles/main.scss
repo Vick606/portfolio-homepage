@@ -93,3 +93,20 @@ h1, h2, h3 {
         }
     }
 }
+footer {
+    background-color: $dark-bg;
+    padding: 1rem 0;
+    text-align: center; 
+
+    .container {
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 0;
+        color: $light-bg; 
+        font-family: $primary-font;
+        font-size: 0.9rem;
+    }
+}
