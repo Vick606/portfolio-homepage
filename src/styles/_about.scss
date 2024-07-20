@@ -1,22 +1,30 @@
 #about {
     text-align: center;
-    padding: 2rem 0;
+    padding: 120px 0 80px;
 
     .profile-picture {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        border: 5px solid $light-bg;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
         color: $primary-color;
         margin-bottom: 1rem;
+        font-size: 3rem;
     }
 
     p {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 0 auto 2rem;
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        margin-top: 2rem;
     }
 }
