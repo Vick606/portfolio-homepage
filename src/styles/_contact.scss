@@ -1,11 +1,14 @@
 #contact {
-    background-color: $secondary-color;
-    padding: 2rem 0;
-    color: white;
+    background-color: var(--light-bg);
+    padding: 4rem 0;
+    color: var(--text-color);
 
     h2 {
+        font-family: $heading-font;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 2rem;
+        color: var(--primary-color);
     }
 
     form {
@@ -14,26 +17,60 @@
 
         input, textarea {
             width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: none;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--primary-color);
             border-radius: 4px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: $primary-font;
+            transition: border-color $transition-speed ease;
+
+            &:focus {
+                outline: none;
+                border-color: var(--secondary-color);
+            }
         }
 
         textarea {
             height: 150px;
+            resize: vertical;
         }
 
         button {
-            background-color: $primary-color;
-            color: white;
+            background-color: var(--primary-color);
+            color: var(--light-bg);
             border: none;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 4px;
             cursor: pointer;
+            font-family: $primary-font;
+            font-weight: 600;
+            transition: background-color $transition-speed ease;
 
             &:hover {
-                background-color: darken($primary-color, 10%);
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+
+    .contact-info {
+        margin-top: 2rem;
+        text-align: center;
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            svg {
+                margin-right: 0.5rem;
+                fill: var(--primary-color);
+            }
+
+            span {
+                font-family: $primary-font;
             }
         }
     }
