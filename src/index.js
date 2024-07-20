@@ -48,15 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             item.style.transform = 'scale(1)';
         });
     });
-
-    // Add project card hover effect
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        card.addEventListener('mouseover', () => {
-            card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-        });
-        card.addEventListener('mouseout', () => {
-            card.style.boxShadow = 'none';
-        });
-    });
 });
