@@ -1,8 +1,8 @@
 # 🚀 Victor K's Portfolio
 
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/your-repo-name)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/your-repo-name)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/your-repo-name)
+![GitHub last commit](https://img.shields.io/github/last-commit/Vick606/portfolio-homepage)
+![GitHub issues](https://img.shields.io/github/issues/Vick606/portfolio-homepage)
+![GitHub stars](https://img.shields.io/github/stars/Vick606/portfolio-homepage)
 
 ## 🌟 Welcome to My Digital Playground!
 
